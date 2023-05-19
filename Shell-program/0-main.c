@@ -2,12 +2,15 @@
 #include <unistd.h>
 
 /**
- * a program that prints same ppid
+* main - PID
+*
+* Return: Always 0.
 */
 int main(void)
 {
-	pid_t pid = getpid();
-	pid_t ppid = getppid();
-	printf("pid: %d\nppid: %d\n", pid, ppid);
-	return 0;
+pid_t pid_info;
+
+pid_info = getpid();
+printf("%u\n", pid_info);
+return (0);
 }
